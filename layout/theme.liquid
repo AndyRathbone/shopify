@@ -63,6 +63,29 @@
       {{ "customer_area.js" | shopify_asset_url | script_tag }}
     {% endif %}
     {{ content_for_header }}
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000000",
+              "text": "#ffffff"
+            },
+            "button": {
+              "background": "#595657",
+              "text": "#ffffff"
+            }
+          },
+          "content": {
+            "message": "By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively.",
+            "dismiss": "Okay"
+          }
+        })});
+    </script>
+
   </head>
   {% if template contains "index" %}
     {% assign feature_image = true %}
