@@ -1969,5 +1969,26 @@
         "label": "[DISQUS](http:\/\/disqus.com\/) shortname"
       }
     ]
+  },
+  {
+    "name": "Cookie consent (custom)",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Cookie consent is a custom Rathbone component that uses the Cookie Consent third-party JS library to generate a sticky footer that asks the visitor to acknowledge the use of cookies."
+      },
+      {
+        "type": "checkbox",
+        "id": "x_custom_cookie_consent_enabled",
+        "label": "Enabled cookie consent",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "x_custom_cookie_consent_message",
+        "label": "Cookie consent message",
+        "default": "By using this website, you agree to our use of cookies. We use cookies to provide you with a great experience and to help our website run effectively."
+      }
+    ]
   }
 ]
