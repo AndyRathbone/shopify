@@ -17,4 +17,4 @@ We also need to add in the configuration options for cookie consent. These go in
 
 Copy the custom settings for the bottom of the old json file into the updated one. 
 
-You may also need to copy over any values in `settings_data.json` (same folder) that start with `"x_custom_` (not sure if Turbo will preserve those or not)
+You may also need to copy over any values in `settings_data.json` (same folder) that start with `x_custom_` (not sure if Turbo will preserve those or not)
